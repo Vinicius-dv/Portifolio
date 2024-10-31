@@ -230,20 +230,6 @@ header{
     height: 18px;
 }
 
-@media(max-width:1170px){
-    .home{
-        width: 90%;
-    }
-    .home p {
-        font-size: 1.3em;
-        font-weight: 400;
-    }
-
-    .home h1{
-        font-size: 1.7em;
-    }
-}
-
 
 /*Minha descrição */
 
@@ -253,7 +239,7 @@ header{
 }
 
 .sobre{
-    height: 590px ;
+    height: 470px ;
     width: 80%;
     background-color: #393939;
     display: flex;
@@ -302,32 +288,151 @@ header{
     height: 100px;
     display: flex;
     position: absolute;
-    
     left: 1210px;
 }
 
-@media(max-width:1170px){
-    .sobre{
-        height: 1050px;
+    
+
+
+/*Skills*/
+
+.div_skills{
+    height: 430px ;
+    width: 80%;
+    background-color: #393939;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius:15px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_skills h1{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.fa-node{
+    margin-left: 20px;
+}
+
+.fa-brands{
+    padding: 20px;
+    font-size: 4em;
+}
+
+.img_icons{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.skill-item span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+/*Medias query*/
+
+@media (max-width: 900px) {
+    .sobre {
+        height: 1100px;
         width: 90%;
         flex-direction: column;
     }
 
-    .p_desc{
+    .p_desc {
         font-size: 1.3em;
     }
 
-    .h1_desc{
+    .h1_desc {
         font-size: 1.5em;
     }
 
-    .p_desc_principal{
+    .p_desc_principal {
         padding-right: 20px;
         justify-content: center;
         align-items: center;
         font-weight: 500;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home{
+        width: 90%;
+    }
+    .sobre {
+        height: 600px;
+    }
+    .div_skills{
+        height: 500px;
+    }
+}
+
+
+
+
+@media (min-width: 1280px) and (max-width:1281px) {
+    .sobre {
+        height: 550px;
+    }
+    .blob {
+        left: 1040px;
+    }
+    .div_skills{
+        height: 450px;
+    }
+}
+
+@media(max-width:600px){
+        .home{
+            width: 90%;
+        }
+        .home p {
+            font-size: 1.3em;
+        }
+        .home h1{
+            font-size: 1.7em;
+        }
+        .div_skills{
+        height: 950px;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
